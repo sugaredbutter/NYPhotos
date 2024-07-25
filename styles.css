@@ -14,6 +14,15 @@
 
 }
 
+.alaskaBackground {
+    background-image: url('img/alaskaBackground.JPG');
+    background-size: cover;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 .japanBackground {
     background-image: url('img/japanBackground.JPG');
     background-size: cover;
@@ -84,7 +93,7 @@ h2 span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.japanTable {
+.imgTable {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -93,7 +102,7 @@ h2 span{
     
 }
 
-.japanTable tr {
+.imgTable tr {
     table-layout: fixed;
     align-items: center;
     margin-left: 0;

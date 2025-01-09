@@ -32,6 +32,15 @@
 
 }
 
+.hawaiiBackground {
+    background-image: url('hawaiiImg/IMG_1266.JPG');
+    background-size: cover;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 .astroBackground {
     background-image: url('astroImg/AuroraAndromeda.jpg');
     background-size: cover;

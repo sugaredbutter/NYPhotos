@@ -42,7 +42,16 @@
 }
 
 .astroBackground {
-    background-image: url('astroImg/Greer_Milkyway_1.png');
+    background-image: url('astroImg/20_Greer_Milkyway_1.png');
+    background-size: cover;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.greerBackground {
+    background-image: url('greerImg/IMG_4236.JPG');
     background-size: cover;
     max-width: 90%;
     margin-left: auto;
@@ -64,24 +73,24 @@ body {
 }
 
 .main-nav {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; 
+    padding: 20px;
 }
 
 .main-nav span {
-    columns: 3;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 10px 20px;
     border: 2px solid black;
     background-color: darkgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     white-space: nowrap;
-
-
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 180px;
+    text-align: center;
 }
-
-
 
 .main-nav span:hover {
     background-color: gray;
@@ -110,23 +119,6 @@ h2 span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.imgTable {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-
-    
-}
-
-.imgTable tr {
-    table-layout: fixed;
-    align-items: center;
-    margin-left: 0;
-    margin-right: 0;
-
-
-}
 td {
     width: 33.333%;
     padding: 0;
@@ -141,3 +133,17 @@ img {
 
 }
 
+.imgTable {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 👈 3 equal columns */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+
+  }
+  
+.imgTable img {
+    width: 100%;        /* Fill the grid cell */
+
+}

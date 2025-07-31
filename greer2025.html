@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Greer Photos</title>
+    </head>
+    <body>
+        <script src="scripts.js"></script>
+        <header>
+
+        </header>
+        <section class="banner">
+            <img src="img/bannerCrop.jpeg" alt="photography banner" class="bannerIMG">
+        </section>
+        <div alt="photography background banner" class="greerBackground">
+            <div class="welcome">
+                <h1>Welcome to my photography site</h2>
+            </div>
+            <br><br><br><br><br><br>
+            <h2><span>View current collections</span></h2>
+            <nav id="nav-menu" class="main-nav"></nav>
+            <script>
+                display_navigation("nav-menu")
+            </script>
+            <br><br><br>
+            <main>
+                <article>
+                    <h2>
+                        <span>Greer 2025</span>
+                    </h2>
+                    <p class="aboutMe">
+                        Camping trip with the boys. The ground was pretty solid.
+                    </p>
+                </article>
+            </main>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        </div>
+        <br><br><br>
+        <div id="imageGallery" class="imgTable"></div>
+        <script>
+        file_names = ["IMG_4043.JPG", "IMG_4098.JPG", "IMG_4105.JPG", 
+                    "IMG_4122.JPG", "IMG_4138.JPG", "IMG_4236.JPG",
+                    "IMG_4256.JPG", "IMG_4262.JPG", "IMG_4264.JPG",
+                    "IMG_4310.JPG", "IMG_4313.JPG", "IMG_4363.JPG",
+                    "IMG_4379.JPG", "IMG_4489.JPG", "IMG_4497.JPG",
+                    "IMG_4520.JPG", "IMG_4533.JPG", "IMG_4542.JPG",
+                    "IMG_4654.JPG"]
+        display_img_table("greerImg/", file_names, "imageGallery");
+        </script>
+    </body>
+</html>

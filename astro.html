@@ -7,6 +7,7 @@
         <title>Astro Photos</title>
     </head>
     <body>
+        <script src="scripts.js"></script>
         <header>
 
         </header>
@@ -19,14 +20,10 @@
             </div>
             <br><br><br><br><br><br>
             <h2><span>View current collections</span></h2>
-            <nav class="main-nav">
-                <span onclick="location.href='./';">Home Page</span>
-                <span onclick="location.href='japan2024';">Japan 2024</span>
-                <span onclick="location.href='alaska2024';">Alaska 2024</span>
-                <span onclick="location.href='hawaii2024';">Hawaii 2024</span>
-                <span onclick="location.href='astro';">Astrophotography</span>
-
-            </nav>
+            <nav id="nav-menu" class="main-nav"></nav>
+            <script>
+                display_navigation("nav-menu")
+            </script>
             <br><br><br>
             <main>
                 <article>
@@ -44,128 +41,18 @@
 
         </div>
         <br><br><br>
-        <table class="imgTable">
-            <tr>
-                <td>
-                    <a href="astroImg/AndromedaStack5Edit90.jpg" target="_blank">
-                        <img src="astroImg/AndromedaStack5Edit90.jpg" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="astroImg/MilkyWayGrandCanyon1Edit90.jpg" target="_blank">
-                        <img src="astroImg/MilkyWayGrandCanyon1Edit90.jpg" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="astroImg/PleiadesGrandCanyon1Edit90.jpg" target="_blank">
-                        <img src="astroImg/PleiadesGrandCanyon1Edit90.jpg" alt="yeah">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="astroImg/ShootingStarGrandCanyonEdit90.jpg" target="_blank">
-                        <img src="astroImg/ShootingStarGrandCanyonEdit90.jpg" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="astroImg/StarGrandCanyonEdit90.jpg" target="_blank">
-                        <img src="astroImg/StarGrandCanyonEdit90.jpg" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="astroImg/AndromedaStack4Edit90.jpg" target="_blank">
-                        <img src="astroImg/AndromedaStack4Edit90.jpg" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="astroImg/MilkyWayUtahEdit90.jpg" target="_blank">
-                        <img src="astroImg/MilkyWayUtahEdit90.jpg" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="astroImg/AndromedaStack6Edit.jpg" target="_blank">
-                        <img src="astroImg/AndromedaStack6Edit.jpg" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="astroImg/picketpost.jpg" target="_blank">
-                        <img src="astroImg/picketpost.jpg" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="astroImg/Picketpost2.jpg" target="_blank">
-                        <img src="astroImg/Picketpost2.jpg" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="astroImg/PleiadesPicket.jpg" target="_blank">
-                        <img src="astroImg/PleiadesPicket.jpg" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="astroImg/Pleaides2.jpg" target="_blank">
-                        <img src="astroImg/Pleaides2.jpg" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="astroImg/AuroraAndromeda.jpg" target="_blank">
-                        <img src="astroImg/AuroraAndromeda.jpg" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="astroImg/AuroraPicket.jpg" target="_blank">
-                        <img src="astroImg/AuroraPicket.jpg" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="astroImg/AuroraPicket2.jpg" target="_blank">
-                        <img src="astroImg/AuroraPicket2.jpg" alt="yeah">
-                    </a>
-                    
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="astroImg/IMG_4204.JPG" target="_blank">
-                        <img src="astroImg/IMG_4204.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="astroImg/Comet.jpg" target="_blank">
-                        <img src="astroImg/Comet.jpg" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="astroImg/Hawaii_orion_1.png" target="_blank">
-                        <img src="astroImg/Hawaii_orion_1.png" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="astroImg/milkyway_picketpost4.png" target="_blank">
-                        <img src="astroImg/milkyway_picketpost4.png" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="astroImg/Greer_Milkyway_1.png" target="_blank">
-                        <img src="astroImg/Greer_Milkyway_1.png" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="astroImg/Greer_Andromeda_1.png" target="_blank">
-                        <img src="astroImg/Greer_Andromeda_1.png" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            
-        </table>
+        <div id="imageGallery" class="imgTable"></div>
+
+        <script>
+        file_names = ["1_AndromedaStack5Edit90.jpg", "2_MilkyWayGrandCanyon1Edit90.jpg", "3_PleiadesGrandCanyon1Edit90.jpg", 
+                    "4_ShootingStarGrandCanyonEdit90.jpg", "5_StarGrandCanyonEdit90.jpg", "6_AndromedaStack4Edit90.jpg",
+                    "7_MilkyWayUtahEdit90.jpg", "8_AndromedaStack6Edit.jpg", "9_picketpost.jpg",
+                    "10_Picketpost2.jpg", "11_PleiadesPicket.jpg", "12_Pleaides2.jpg",
+                    "13_AuroraAndromeda.jpg", "14_AuroraPicket.jpg", "15_AuroraPicket2.jpg",
+                    "16_IMG_4204.JPG", "17_Comet.jpg", "18_Hawaii_orion_1.png",
+                    "19_milkyway_picketpost4.png", "20_Greer_Milkyway_1.png", "21_Greer_Andromeda_1.png"]
+        display_img_table("astroImg/", file_names, "imageGallery");
+        </script>
 
     </body>
 </html>

@@ -7,6 +7,8 @@
         <title>Hawaii Photos</title>
     </head>
     <body>
+        <script src="scripts.js"></script>
+
         <header>
 
         </header>
@@ -19,13 +21,10 @@
             </div>
             <br><br><br><br><br><br>
             <h2><span>View current collections</span></h2>
-            <nav class="main-nav">
-                <span onclick="location.href='./';">Home Page</span>
-                <span onclick="location.href='japan2024';">Japan 2024</span>
-                <span onclick="location.href='alaska2024';">Alaska 2024</span>
-                <span onclick="location.href='hawaii2024';">Hawaii 2024</span>
-                <span onclick="location.href='astro';">Astrophotography</span>
-            </nav>
+            <nav id="nav-menu" class="main-nav"></nav>
+            <script>
+                display_navigation("nav-menu")
+            </script>
             <br><br><br>
             <main>
                 <article>
@@ -41,224 +40,24 @@
 
         </div>
         <br><br><br>
-        <table class="imgTable">
-            <tr>
-                <td>
-                    <a href="hawaiiImg/IMG_0688.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_0688.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_0746.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_0746.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_0912.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_0912.JPG" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="hawaiiImg/IMG_0944.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_0944.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_0989.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_0989.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1021.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1021.JPG" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="hawaiiImg/IMG_1165.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1165.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1182.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1182.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1191.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1191.JPG" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="hawaiiImg/IMG_1199.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1199.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1203.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1203.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1214.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1214.JPG" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="hawaiiImg/IMG_1222.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1222.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1225.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1225.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1259.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1259.JPG" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="hawaiiImg/IMG_1266.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1266.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1278.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1278.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1280.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1280.JPG" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="hawaiiImg/IMG_1282.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1282.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1299.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1299.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1305.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1305.JPG" alt="yeah">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="hawaiiImg/IMG_1308.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1308.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1324.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1324.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1342.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1342.JPG" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="hawaiiImg/IMG_1382.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1382.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1395.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1395.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1404.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1404.JPG" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="hawaiiImg/IMG_1409.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1409.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1414.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1414.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1433.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1433.JPG" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="hawaiiImg/IMG_1448.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1448.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1483.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1483.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1581.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1581.JPG" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="hawaiiImg/IMG_1670.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1670.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1677.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1677.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    <a href="hawaiiImg/IMG_1691.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_1691.JPG" alt="yeah">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="hawaiiImg/IMG_2049.JPG" target="_blank">
-                        <img src="hawaiiImg/IMG_2049.JPG" alt="yeah">
-                    </a>
-                </td>
-                <td>
-                    
-                </td>
-                <td>
-                    
-                </td>
-            </tr>
-        </table>
+        <div id="imageGallery" class="imgTable"></div>
+
+        <script>
+        file_names = ["IMG_0688.JPG", "IMG_0746.JPG", "IMG_0912.JPG", 
+                    "IMG_0944.JPG", "IMG_0989.JPG", "IMG_1021.JPG",
+                    "IMG_1165.JPG", "IMG_1182.JPG", "IMG_1191.JPG",
+                    "IMG_1199.JPG", "IMG_1203.JPG", "IMG_1214.JPG",
+                    "IMG_1222.JPG", "IMG_1225.JPG", "IMG_1259.JPG",
+                    "IMG_1266.JPG", "IMG_1278.JPG", "IMG_1280.JPG",
+                    "IMG_1282.JPG", "IMG_1299.JPG", "IMG_1305.JPG",
+                    "IMG_1308.JPG", "IMG_1324.JPG", "IMG_1342.JPG",
+                    "IMG_1382.JPG", "IMG_1395.JPG", "IMG_1404.JPG",
+                    "IMG_1409.JPG", "IMG_1414.JPG", "IMG_1433.JPG",
+                    "IMG_1448.JPG", "IMG_1483.JPG", "IMG_1581.JPG",
+                    "IMG_1670.JPG", "IMG_1677.JPG", "IMG_1691.JPG",
+                    "IMG_2049.JPG"]
+        display_img_table("hawaiiImg/", file_names, "imageGallery");
+        </script>
 
     </body>
 </html>

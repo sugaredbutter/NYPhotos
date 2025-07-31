@@ -135,7 +135,7 @@ img {
 
 .imgTable {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 👈 3 equal columns */
+    grid-template-columns: repeat(3, 1fr);
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -144,6 +144,6 @@ img {
   }
   
 .imgTable img {
-    width: 100%;        /* Fill the grid cell */
+    width: 100%;
 
 }

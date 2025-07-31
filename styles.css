@@ -141,7 +141,20 @@ img {
     margin-right: auto;
     border-collapse: collapse;
 
-  }
+}
+
+@media (max-width: 1500px) {
+    .imgTable {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .imgTable {
+        grid-template-columns: 1fr;
+    }
+}
+
   
 .imgTable img {
     width: 100%;
